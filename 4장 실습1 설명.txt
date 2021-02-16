@@ -1,0 +1,9 @@
+hello라는 디렉토리를 만들고
+cd hello명령어로 hello 디렉토리 작업 시작
+mkdir hello1 명령어로 hello 디렉토리 내에 hello1 디렉토리 생성
+mkdir hello2 명령어로 hello 디렉토리 내에 hello2 디렉토리 생성
+mkdir -p ./hello1/hello3 명령어로 hello1 디렉토리 내에 hello3 디렉토리 생성
+cd hello1 명령어로 hello1 디렉토리 작업 시작
+ls 명령어로 hello1 내에 hello3가 생성되었음을 확인 가능
+
+ 
