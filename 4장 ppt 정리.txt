@@ -1,0 +1,67 @@
+파일
+d=directory
+b=block device(hard disk, CDROM)
+c=문자 장치(키보드, 마우스)
+l=symbolic link
+ex) rwx / --- / ---
+    user  group  other
+r: 읽기 가능 여부, w: 쓰기 가능 여부, x: 실행 가능 여부
+
+mkdir hello: hello라는 디렉토리 생성
+mkdir -p hello/hello1 hello라는 디렉토리 안에 hello1 디렉토리 생성
+
+rm: 파일 제거
+
+rmdir: 디렉토리 제거
+
+touch [옵션] 파일명
+
+-c : 파일이 존재하지 않으면 생성x
+
+ln: 파일 복사
+
+ln [파일명] [하드링크 파일명]
+ln -s [파일명] [심볼릭 링크 파일명]
+
+hardlink vs symbolic link
+
+hard link: 원본과 동일한 incode를 가진다.(따라서 원본의 개념이 없음)
+
+symboilc link: 원본 파일의 이름을 가리키는 링크
+따라서 원본 파일이 사라지게 되면 역할을 수행할 수 없다.
+
+ls -li : 결과보기 
+
+Pipe: 프로세서간 통신을 할 때 사용하는 커뮤니케이션의 한 방법
+mkfifo: pipe 생성
+
+chmod _ _ _ _(숫자) 파일 이름: 파일, 디렉토리 접근 권한 변경
+r: 4 w: 2 x: 1
+
+unmask _ _ _ _ : 파일이나 디렉토리를 생성할 때 초기에 부여할 권한을 설정
+-> 제거하고 싶은 권한을 숫자로 표현(빼기의 개념)
+
+chown: 파일, 디렉토리에 할당된 소유권 및 그룹 변경
+소유할 user와 그룹이 여러 개이면 :(colon) 을 이용해서 추가
+
+ls : listing directory contents
+
+cd: changing directories
+
+pwd: printing working directory
+
+pushd, popd : 디렉토리 추가, 삭제
+
+cp: 파일 복사
+
+dd: 데이터 복사
+
+od: 파일 내용 보기
+
+파일 찾기
+find 다양한 기준으로 찾을 수 있음
+ex) 이름으로 찾기
+
+find / -name "e100" -print  (책에는 이렇게 설명되어있는데 -print빼줘도 됨)
+
+locate (이름을 이용해서 파일 찾기)
