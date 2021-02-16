@@ -1,0 +1,6 @@
+index.html 파일과 /tmp/html 디렉토리를 만들고
+index.html 파일을 /tmp/html 디렉토리에 복사해주었다
+/tmp/html 디렉토리에 index.html파일이 있음을 확인했다
+/tmp/back디렉토리를 만들고 tmp/html의 모든 파일을 복사했다.
+그렇게 했더니 디렉토리 구조가
+/tmp/back/html/index.html 순으로 있음을 확인했다.
